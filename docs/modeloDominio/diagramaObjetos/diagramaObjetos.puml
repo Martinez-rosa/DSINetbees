@@ -41,7 +41,7 @@ object "Ingresos Mentoria01" as ingr001 {
   tipoPago = "Único"
 }
 
-' ====== Relaciones ======
+
 netBees --> servMentoria : Ofrece
 cliInnov -U-> servMentoria : Solicita
 empJuan --> proyExpan : Trabaja en
