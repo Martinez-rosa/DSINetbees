@@ -1,0 +1,53 @@
+@startuml
+hide empty members
+hide circle
+
+object "Empresa NetBees" as netBees {
+  nombre = "NetBees Business Center"
+  ubicacion = "Cantabria"
+  sector = "Ecosistema de Innovación"
+}
+
+object "Servicio Mentoria" as servMentoria {
+  nombre = "Mentoría Industrial"
+  precioUnitario = 3200
+  ventasAnualesEstimadas = 4
+  ingresosAnualesEstimados = 12500
+}
+
+object "Cliente InnovCorp" as cliInnov {
+  nombre = "InnovCorp"
+  sector = "Industrial"
+  ubicacion = "Madrid"
+}
+
+object "Empleado JuanPerez" as empJuan {
+  nombre = "Juan Pérez"
+  puesto = "Mentor Experto"
+}
+
+object "Proyecto ExpansiónInnovCorp" as proyExpan {
+  nombre = "Proyecto Expansión InnovCorp"
+  descripcion = "Desarrollo de nuevos mercados"
+}
+
+object "Contrato Mentoria01" as contrato001 {
+  fechaInicio = "2025-03-01"
+  fechaFin = "2025-06-30"
+}
+
+object "Ingresos Mentoria01" as ingr001 {
+  monto = 3200
+  tipoPago = "Único"
+}
+
+' ====== Relaciones ======
+netBees --> servMentoria : Ofrece
+cliInnov -U-> servMentoria : Solicita
+empJuan --> proyExpan : Trabaja en
+servMentoria --> proyExpan : Resulta
+empJuan -U-> netBees : Pertenece a
+contrato001 --> ingr001 : Genera
+servMentoria --> contrato001 : Condiciona
+netBees --> contrato001 : Emite
+@enduml
