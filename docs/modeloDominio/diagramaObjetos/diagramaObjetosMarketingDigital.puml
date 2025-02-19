@@ -2,7 +2,6 @@
 hide empty members
 hide circle
 
-' ====== Objetos ======
 object "Empresa NetBees" as netBees {
   nombre = "NetBees Business Center"
   ubicacion = "Cantabria"
@@ -49,7 +48,7 @@ object "Ingresos Marketing01" as ingrM01 {
   monto = 1300
 }
 
-' ====== Relaciones ======
+
 netBees --> servRS : Ofrece
 netBees --> servFV : Ofrece
 

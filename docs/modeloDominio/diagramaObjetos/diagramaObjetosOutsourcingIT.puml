@@ -1,0 +1,59 @@
+@startuml
+hide empty members
+hide circle
+
+object "Empresa NetBees" as netBees {
+  nombre = "NetBees Business Center"
+  ubicacion = "Cantabria"
+  sector = "Ecosistema de Innovación"
+}
+
+object "Servicio OutsourcingIT" as servOutIT {
+  nombre = "Outsourcing de IT"
+  precioPorHora = 22
+  ingresosAnualesEstimados = 37500
+}
+
+object "Cliente GlobalTech" as cliGlobal {
+  nombre = "GlobalTech"
+  sector = "Tecnología"
+  ubicacion = "Madrid"
+}
+
+object "Empleado CarlosPerez" as empCarlos {
+  nombre = "Carlos Pérez"
+  puesto = "Consultor IT"
+}
+
+object "Proyecto DevOpsImplementation" as proyDevOps {
+  nombre = "Implementación DevOps"
+  descripcion = "Automatización y optimización de procesos"
+}
+
+object "Contrato Outsourcing01" as contratoO01 {
+  fechaInicio = "2025-04-01"
+  fechaFin = "2025-10-01"
+}
+
+object "Ingresos Outsourcing01" as ingrO01 {
+  monto = 22000
+  descripcion = "1,000 horas a 22€/hora"
+}
+
+
+netBees --> servOutIT : Ofrece
+
+
+cliGlobal -u-> servOutIT : Solicita
+
+empCarlos -u-> netBees : Pertenece a
+empCarlos --> proyDevOps : Trabaja en
+
+servOutIT --> proyDevOps : Resulta
+
+netBees --> contratoO01 : Emite
+servOutIT --> contratoO01 : Condiciona
+
+contratoO01 --> ingrO01 : Genera
+
+@enduml
