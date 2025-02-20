@@ -1,0 +1,35 @@
+@startuml
+hide empty members
+hide circle
+
+class Empresa {
+}
+
+class Servicio {
+}
+
+class Cliente {
+}
+
+class Empleado {
+}
+
+class Proyecto {
+}
+
+class Ingresos {
+}
+
+class Contrato {
+}
+
+
+Empresa  -->  Servicio : Ofrece
+Cliente -U-> Servicio : Solicita
+Empleado --> Proyecto : Trabaja en
+Servicio --> Proyecto : Resulta
+Empleado -U-> Empresa : Pertenece a
+Contrato  --> Ingresos : Genera
+Servicio --> Contrato : Condiciona
+Empresa --> Contrato : Emite
+@enduml
