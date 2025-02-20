@@ -1,35 +1,21 @@
-# 📂 Proyecto NetBees
+# 🏭 NetBees | Transformando la Industria en Cantabria
 
-<div align="center">
-  <img src="images/LogoNetbees.png" alt="NetBees Logo" width="150">
-  <h2> Bienvenido a NetBees</h2>
-</div>
+🌟 **Bienvenido a NetBees**  
+NetBees es el área inteligente del **Polígono Industrial de Guarnizo**, un **centro de innovación y digitalización** que impulsa a las empresas locales hacia la Industria 4.0. Desde la automatización hasta el marketing digital con IA, ayudamos a transformar negocios con tecnología.
 
-📌 **Selecciona una categoría para explorar:**
+---
 
-<div align="center">
+## 🌍 **Visión**
+Convertir NetBees y su ecosistema en el **epicentro de la transformación digital industrial en Cantabria**, optimizando procesos, aumentando la competitividad de las empresas y fomentando la sostenibilidad.
 
-<table>
-  <tr>
-    <td align="center">
-      <a href="https://github.com/usuario/repositorio/tree/main/diagrams">
-        <img src="https://cdn-icons-png.flaticon.com/128/3790/3790615.png" width="80"><br>
-        📊 <strong>Diagramas UML</strong>
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://github.com/usuario/repositorio/tree/main/docs">
-        <img src="https://cdn-icons-png.flaticon.com/128/2991/2991145.png" width="80"><br>
-        📄 <strong>Documentación</strong>
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://github.com/usuario/repositorio/tree/main/code">
-        <img src="https://cdn-icons-png.flaticon.com/128/3771/3771090.png" width="80"><br>
-        💻 <strong>Código Fuente</strong>
-      </a>
-    </td>
-  </tr>
-</table>
+## 🎯 **Objetivos**
+✅ Digitalizar procesos industriales con IA y automatización.  
+✅ Crear un **entorno de colaboración** con networking y formación.  
+✅ Potenciar el **desarrollo empresarial** con estrategias de marketing y licitaciones.  
+✅ Impulsar la eficiencia energética y la sostenibilidad.
 
-</div>
+---
+
+## 🚀 **¿Cómo lo hacemos?**
+![Diagrama UML](docs/modeloDominio/diagramaClases/diagramaClases.svg)
+![Diagrama UML](docs/diagramaRelaciones/diagramaRelaciones.svg)
