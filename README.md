@@ -24,6 +24,5 @@ graph TD
     A -->|Marketing y Expansión| D[NetBees MarketPro]
     A -->|Sostenibilidad y Colaboración| E[Espacios de Coworking]
     A -->|Desarrollo de Negocio con Nuevas Tecnologías| F[Licitaciones Públicas]
----
 
 
