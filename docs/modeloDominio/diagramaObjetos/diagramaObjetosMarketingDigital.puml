@@ -1,0 +1,67 @@
+@startuml
+hide empty members
+hide circle
+
+object "Empresa NetBees" as netBees {
+  nombre = "NetBees Business Center"
+  ubicacion = "Cantabria"
+  sector = "Ecosistema de Innovación"
+}
+
+object "Servicio RedesSociales" as servRS {
+  nombre = "Redes Sociales"
+  precioPorUnidad = 350
+  ventasAnualesEstimadas = 21
+  ingresosAnualesEstimados = 7500
+}
+
+object "Servicio FunnelVentas" as servFV {
+  nombre = "Funnel de Ventas"
+  precioPorUnidad = 950
+  ventasAnualesEstimadas = 5
+  ingresosAnualesEstimados = 5000
+}
+
+object "Cliente MarketingCorp" as cliMkt {
+  nombre = "MarketingCorp"
+  sector = "Marketing Digital"
+  ubicacion = "Barcelona"
+}
+
+object "Empleada" as empMaura {
+  nombre = "Maura Martínez"
+  puesto = "Especialista en Redes Sociales"
+}
+
+object "Proyecto ExpansiónOnline" as proyExpOnline {
+  nombre = "Expansión Online"
+  descripcion = "Incrementar la presencia en redes"
+}
+
+object "Contrato Marketing01" as contratoM01 {
+  fechaInicio = "2025-03-01"
+  fechaFin = "2025-09-01"
+
+}
+
+object "Ingresos Marketing01" as ingrM01 {
+  monto = 1300
+}
+
+
+netBees --> servRS : Ofrece
+netBees --> servFV : Ofrece
+
+cliMkt -U-> servRS : Solicita
+cliMkt -U-> servFV : Solicita
+
+empMaura --> proyExpOnline : Trabaja en
+servRS --> proyExpOnline : Resulta
+empMaura -U-> netBees : Pertenece a
+
+contratoM01 --> ingrM01 : Genera
+servRS --> contratoM01 : Condiciona
+servFV --> contratoM01 : Condiciona
+netBees --> contratoM01 :Emite
+
+@enduml
