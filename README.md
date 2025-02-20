@@ -15,7 +15,7 @@ Fomentar un ecosistema de innovación en Cantabria que atraiga talento digital g
 ✅ Digitalizar procesos industriales con IA y automatización.  
 ✅ Crear un **entorno de colaboración** con networking y formación.  
 ✅ Potenciar el **desarrollo empresarial** con estrategias de marketing y licitaciones.  
-✅ Impulsar la eficiencia energética y la sostenibilidad.
+✅ Impulsar la sostenibilidad.
 
 ---
 
