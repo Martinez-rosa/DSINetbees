@@ -17,5 +17,13 @@ Convertir NetBees y su ecosistema en el **epicentro de la transformación digita
 ---
 
 ## 🚀 **¿Cómo lo hacemos?**
-![Diagrama UML](docs/modeloDominio/diagramaClases/diagramaClases.svg)
-![Diagrama UML](docs/diagramaRelaciones/diagramaRelaciones.svg)
+```mermaid
+graph TD
+    A[Netbees Business Center] -->|Automatización de Procesos| B[Outsourcing de IT]
+    A -->|Formación y Crecimiento| C[NetBees Academy]
+    A -->|Marketing y Expansión| D[NetBees MarketPro]
+    A -->|Sostenibilidad y Colaboración| E[Espacios de Coworking]
+    A -->|Desarrollo de Negocio con Nuevas Tecnologías| F[Licitaciones Públicas]
+---
+
+
